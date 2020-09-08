@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  node:
+    image: node:12.16.1
+    ports:
+      - 80:80
+    init: true
+    tty: true
