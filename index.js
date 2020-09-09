@@ -22,7 +22,4 @@ app.post("/prettier", (req, res) => {
   }
 });
 
-const port = 80;
-app.listen(port, () => {
-  console.log(`server running at :${port}`);
-});
+app.listen(process.env.PORT || 3000);
